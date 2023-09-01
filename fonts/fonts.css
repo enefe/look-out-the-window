@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'FiraSans Regular';
+    src: url('FiraSansCondensed-Regular.woff2') format('woff2'),
+        url('FiraSansCondensed-Regular.woff') format('woff'),
+        url('FiraSansCondensed-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'FiraSans Bold';
+    src: url('FiraSansCondensed-Bold.woff2') format('woff2'),
+        url('FiraSansCondensed-Bold.woff') format('woff'),
+        url('FiraSansCondensed-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Oswald Bold';
+    src: url('Oswald-Bold.woff2') format('woff2'),
+        url('Oswald-Bold.woff') format('woff'),
+        url('Oswald-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}

@@ -1,0 +1,171 @@
+@import url('../fonts/fonts.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    font-family: 'FiraSans Regular', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(27, 25, 25, 1);
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1140px;
+}
+
+.page__content {
+    margin: 135px 30px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.video__play {
+    margin-top: 74px;
+    margin-bottom: 16px;
+    width: 711px;
+    height: 386px;
+    object-fit: cover;
+}
+
+.video__container {
+    display: grid;
+    grid-template-areas: 
+    'city time .'
+    'input checkboxes button';
+    row-gap: 5px;
+    column-gap: 40px;
+}
+
+.video__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    max-width: 225px;
+}
+
+.video__title_type_city {
+    grid-area: city;
+}
+
+.video__title_type_time {
+    grid-area: time;
+}
+
+.video__input {
+    grid-area: input;
+    width: 225px;
+    height: 27px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 3px;
+}
+
+.video__input:active {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+
+.video__input:focus {
+    outline-offset: 1px;
+    outline: 1px solid #FFF;
+}
+
+.video__checkboxes {
+    grid-area: checkboxes;
+    display: flex;
+    align-items: center;
+}
+
+.video__label-check {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    padding-left: 1px;
+}
+
+.video__label-check:last-child {
+    margin-right: 0;
+}
+
+.video__label-check:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.video__label-check span {
+    display: block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #FFF;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+input[type='checkbox']:checked + span {
+    background-image: url('../images/input.png');
+    background-position: center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+.video__label-check:has(input[type='checkbox']:focus) {
+    outline-offset: 0;
+    outline: 1px solid #FFF;
+}
+
+.video__button {
+    grid-area: button;
+    color: #FFF;
+    width: 194px;
+    height: 34px;
+    font-family: 'FiraSans Bold', sans-serif;;
+    font-size: 18px;
+    line-height: normal;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    
+}
+
+.video__button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.video__button:active {
+    background: #545050;
+}
+
+.video__button:focus {
+    outline-offset: 1px;
+    outline: 1px solid #FFF;
+}
+
+.visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  } 

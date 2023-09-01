@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Поиск видео">
+        <link rel="icon" href="images/favicon.ico" type="any">
+        <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+        <title>Посмотри в окно</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body class="page">
+        <section class="content page__content">
+            <div class="video">
+                <video class="video__play" src="videos/cover-video.mp4" muted autoplay loop controls></video>
+
+                <form class="video__container" action="#">
+                    <label class="video__title video__title_type_city" for="city">Город</label>
+                    <input class="video__input" type="text" id="city" name="city" placeholder="Санкт-Петербург, например" value="">
+
+                    <h3 class="video__title video__title_type_time">Время суток</h3>
+                    <div class="video__checkboxes">
+                        <label class="video__label-check" for="morning">
+                            <input class="video__checkbox visually-hidden" type="checkbox" id="morning" name="time">
+                            <span></span>
+                            Утро
+                        </label>
+                        
+                        <label class="video__label-check" for="day">
+                            <input class="video__checkbox visually-hidden" type="checkbox" id="day" name="time">
+                            <span></span>
+                            День
+                        </label>
+
+                        <label class="video__label-check" for="night">
+                            <input class="video__checkbox visually-hidden" type="checkbox" id="night" name="time">
+                            <span></span>
+                            Ночь
+                        </label>
+                    </div>
+                   
+                    <button class="video__button" type="submit">Найти</button>
+                </form>
+            </div>
+
+            <div class="info">
+                <h1 class="info__title">по-<br>смотри<br>в окно</h1>
+
+                <div class="info__container">
+                    <ul class="info__items">
+                        <li class="info__item">
+                            <div class="info__about">
+                                <h3 class="info__name">Тбилиси</h3>
+                                <p class="info__desc">Вот, что видит кто-то из команды Практикума, когда не смотрит на код, а смотрит в окно.</p>
+                            </div>
+                            <img class="info__image" src="images/tbilisi.png" alt="Вид из окна на город Тбилиси: улица, машины, зеленые деревья.">
+                        </li>
+    
+                        <li class="info__item">
+                            <div class="info__about">
+                                <h3 class="info__name">Москва</h3>
+                                <p class="info__desc">Вот, что видит кто-то из команды Практикума, когда не смотрит на код, а смотрит в окно.</p>
+                            </div>
+                            <img class="info__image" src="images/moscow.png" alt="Вид из окна на город Москва: закат на фоне города.">
+                        </li>
+                        
+                        <li class="info__item">
+                            <div class="info__about">
+                                <h3 class="info__name">Орел</h3>
+                                <p class="info__desc">Вот, что видит кто-то из команды Практикума, когда не смотрит на код, а смотрит в окно.</p>
+                            </div>
+                            <img class="info__image" src="images/orel.png" alt="Вид из окна на город Орел: видны гаражи, машины, многоквартирный дом на заднем плане.">
+                        </li>
+                    </ul>
+
+                    <button class="info__more">Показать ещё</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
