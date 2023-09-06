@@ -143,7 +143,6 @@ input[type='checkbox']:checked + span {
     line-height: normal;
     border: 1px solid #FFF;
     background-color: transparent;
-    
 }
 
 .video__button:hover {
@@ -160,6 +159,112 @@ input[type='checkbox']:checked + span {
     outline: 1px solid #FFF;
 }
 
+.info__title {
+    font-family: 'Oswald Bold', sans-serif;
+    font-size: 75px;
+    line-height: 94%;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+.info__title span {
+    color: #545050;
+}
+
+.info__container {
+    height: 302px;
+    overflow-y: scroll;
+    padding-right: 5px;
+    scrollbar-width: 5px;
+    scrollbar-color: white black;
+}
+
+.info__container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.info__container::-webkit-scrollbar-track {
+    background: white; 
+}
+
+.info__container::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.info__items {
+    list-style-type: none;
+}
+
+.info__item {
+    margin-bottom: 70px;
+    display: flex;
+    cursor: pointer;
+}
+
+.info__item:active {
+    background-color: #545050;
+}
+
+.info__item:hover .info__name {
+    text-decoration-line: underline;
+}
+
+.info__item:hover .info__desc {
+    text-decoration-line: underline;
+}
+
+.info__name {
+    font-family: 'Oswald Bold', sans-serif;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.info__desc {
+    font-size: 16px;
+    line-height: 13.2px; 
+    margin-right: 5px;
+}
+
+.info__image {
+    object-fit: contain;
+    object-position: top;
+    /* margin-right: 5px; */
+}
+
+.info__item:last-child {
+    margin-bottom: 0;
+}
+
+.info__more {
+    color: #FFF;
+    font-family: 'FiraSans Bold', sans-serif;;
+    font-size: 18px;
+    line-height: normal;
+    width: 399px;
+    height: 34px;
+    margin-top: 32px;
+    border: 1px solid #FFF;
+    border-radius: none;
+    background-color: transparent;
+}
+
+.info__more:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.info__more:active {
+    background: #545050;
+}
+
+.info__more:focus {
+    outline-offset: 1px;
+    outline: 1px solid #FFF;
+}
+
 .visually-hidden {
     position: absolute;
     inline-size: 1px;
@@ -168,4 +273,4 @@ input[type='checkbox']:checked + span {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     white-space: nowrap;
-  } 
+} 
